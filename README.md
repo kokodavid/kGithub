@@ -23,10 +23,10 @@ For the application to work installation of Google chrome or any browser should 
 
 The application is open to Contributors,The requirement  is to have a good background on Angular
 
-## Running end-to-end tests
+## The Developer
 
+The Github search application is developed by David Mochoge.
 
-
-## Further help
+## Contacts
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
