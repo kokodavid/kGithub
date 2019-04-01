@@ -2,7 +2,7 @@
 GITHUB SEARCH
 
 ## Description
-
+Github search application allows the user to enter a repository name or a Github username and the response is given back on the same view.The Github Search is a more simpler redefined application which helps developers and also non developers to access projects hosted by github.
 
 
 ## Code scaffolding
