@@ -9,9 +9,15 @@ Github search application allows the user to enter a repository name or a Github
 For the application to work installation of Google chrome or any browser should be initiated by the user.
 
 
-## Build
+## Technologies Used
+<ul>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<li>HTML</li>
+<li>Angular 7</li>
+<li>Typescript</li>
+<li>Javascript</li>
+<li>Chrome</li>
+</ul>
 
 ## Running unit tests
 
