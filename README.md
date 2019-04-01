@@ -29,4 +29,7 @@ The Github search application is developed by David Mochoge.
 
 ## Contacts
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To contact the developer use the contacts below
+<ul>
+<li>Tel:0770057240</li>
+<li>Email:kingkgdave@gmail.com</li>
