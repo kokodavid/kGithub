@@ -19,13 +19,13 @@ For the application to work installation of Google chrome or any browser should 
 <li>Chrome</li>
 </ul>
 
-## Running unit tests
+## Contributors
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The application is open to Contributors,The requirement  is to have a good background on Angular
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
 
 ## Further help
 
