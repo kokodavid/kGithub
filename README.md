@@ -33,3 +33,10 @@ To contact the developer use the contacts below
 <ul>
 <li>Tel:0770057240</li>
 <li>Email:kingkgdave@gmail.com</li>
+</ul>
+
+## Deployment
+You can find this application through this link:
+
+## Licence
+The application uses an Mit licence
