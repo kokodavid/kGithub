@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import {Users} from '../users';
 import {ProfileService} from '../services/profile.service';
@@ -13,9 +14,8 @@ import {Repos} from '../repos';
 })
 export class SearchComponent implements OnInit {
 
-  userName = "ANM05";
+  userName = "";
   user:Users;
-  // repos:Repos[] = [];
   repos:Repos;
   profile: any;
   repo: Object;
@@ -26,13 +26,12 @@ export class SearchComponent implements OnInit {
 
   findProfile(){
   	this.profileService.updateProfile(this.userName);
-  	this.profileService.getProfileInfo().subscribe(profile => {
-  		console.log(profile);
+  	this.profileService.getProfileInfo(this.userName).subscribe(profile => {
+  	
   		this.profile = profile;
   	});
 
-    this.profileService.getProfileRepos().subscribe(repos => {
-  		console.log(repos);
+    this.profileService.getProfileRepos(this.userName).subscribe(repos => {
   		this.repo = repos;
   	})  	
   
@@ -41,11 +40,13 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
     this.profileService.profileRequest();
     this.user = this.profileService.user;  
-
+    this.profileService.getProfileInfo(this.userName).subscribe(profile => {
+  	
+  		this.profile = profile;
+  	});
       
     }
 
 
   }
-
 

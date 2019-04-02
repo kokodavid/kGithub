@@ -14,7 +14,7 @@
   })
   export class ProfileService {
   
-  userName ="kokodavid";
+  userName :string;
     user:Users;
     repos:Repos;
     apiUrl = "https://api.github.com/users/"+this.userName;
@@ -24,18 +24,18 @@
       this.repos=new Repos("","","");
      }
   
-     getProfileInfo(){
-      return this.http.get("https://api.github.com/users/" + this.userName )
+     getProfileInfo(userName){
+      return this.http.get("https://api.github.com/users/" + userName )
     
     }
   
-    getProfileRepos(){
-      return this.http.get("https://api.github.com/users/" + this.userName )
+    getProfileRepos(userName){
+      return this.http.get("https://api.github.com/users/" + userName )
       
     }
   
-    updateProfile(username:string){
-      this.userName = username;
+    updateProfile(userName){
+      this.userName = userName;
     }
 
      profileRequest(){
@@ -78,9 +78,4 @@
       
      }
   }
-  
-  
-  
-  
-  
   
