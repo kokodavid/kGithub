@@ -30,7 +30,7 @@
     }
   
     getProfileRepos(userName){
-      return this.http.get("https://api.github.com/users/" + userName )
+      return this.http.get("https://api.github.com/users/" + userName+"/repos" )
       
     }
   

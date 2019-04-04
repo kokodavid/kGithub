@@ -15,10 +15,11 @@ import {Repos} from '../repos';
 export class SearchComponent implements OnInit {
 
   userName = "";
-  user:Users;
-  repos:Repos;
+  user:any=[]
+  repos:any=[]
   profile: any;
   repo: Object;
+
 
 
   constructor(private profileService:ProfileService) { }
@@ -27,15 +28,14 @@ export class SearchComponent implements OnInit {
   findProfile(){
   	this.profileService.updateProfile(this.userName);
   	this.profileService.getProfileInfo(this.userName).subscribe(profile => {
-  	console.log(profile)
-      this.profile = profile;
-      return profile
+  	
+      this.user= profile;
+      
   	});
 
     this.profileService.getProfileRepos(this.userName).subscribe(repos => {
-      console.log(repos)
-      this.repo = repos;
-      return repos;
+      this.repos = repos;
+    
   	})  	
   
 

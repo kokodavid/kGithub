@@ -21,26 +21,23 @@
                 <li class="list-group-item">Following: {{user.following}} <a href="{{user.html_url}}" target="_blank">{{user.html_url}}</a></li>
             </ul>
     
-    
+            <hr class="hrstyle">
+            <div *ngFor="let dispRepo of repos">    
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-dark"><h5>{{dispRepo.name}}</h5></li>
+                </ul>
+                <blockquote class="text-lg">
+                  <p>{{dispRepo.description}}</p>
+                  <footer><cite><a href=" {{dispRepo.html_url}}" target="_blank">{{dispRepo.html_url}}</a></cite></footer>
+              </blockquote>
+              <hr class="hrstyle">
+            </div>
     
         
         </div>
     
      </div>
-     <div class="col col-6">
     
-         <hr class="hrstyle">
-      <div *ngFor="let dispRepo of repos">    
-          <ul class="list-group">
-              <li class="list-group-item"><h5>{{dispRepo.name}}</h5></li>
-          </ul>
-          <blockquote class="text-lg">
-            <p>{{dispRepo.description}}</p>
-            <footer><cite><a href=" {{dispRepo.html_url}}" target="_blank">{{dispRepo.html_url}}</a></cite></footer>
-        </blockquote>
-        <hr class="hrstyle">
-      </div>
-    </div>
     </div>
     
     
