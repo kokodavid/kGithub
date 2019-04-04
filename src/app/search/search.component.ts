@@ -27,12 +27,15 @@ export class SearchComponent implements OnInit {
   findProfile(){
   	this.profileService.updateProfile(this.userName);
   	this.profileService.getProfileInfo(this.userName).subscribe(profile => {
-  	
-  		this.profile = profile;
+  	console.log(profile)
+      this.profile = profile;
+      return profile
   	});
 
     this.profileService.getProfileRepos(this.userName).subscribe(repos => {
-  		this.repo = repos;
+      console.log(repos)
+      this.repo = repos;
+      return repos;
   	})  	
   
 
